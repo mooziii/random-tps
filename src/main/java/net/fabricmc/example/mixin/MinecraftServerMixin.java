@@ -25,8 +25,6 @@ import java.util.function.BooleanSupplier;
 @Mixin(MinecraftServer.class)
 public abstract class MinecraftServerMixin {
 
-    @Shadow public abstract void sendSystemMessage(Text message, UUID sender);
-
     @Shadow private PlayerManager playerManager;
 
     private int tick = 0;
