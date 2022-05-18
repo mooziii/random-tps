@@ -38,7 +38,7 @@ public abstract class MinecraftServerMixin {
             if(tps < 0.08) {
                 tps = 1;
             }
-            if(random.nextBoolean()) {
+            if(random.nextInt(4) > 0 ) {
                 tps*=2;
                 if(random.nextInt(4) == 1) {
                     tps*=2;
